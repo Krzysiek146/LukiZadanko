@@ -1,0 +1,165 @@
+.div1 {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+	grid-area: 1 / 2 / 2 / 5;
+}
+
+.div3 {
+	grid-area: 2 / 2 / 6 / 5;
+}
+
+.div4 {
+	grid-area: 2 / 1 / 6 / 2;
+}
+
+.div5 {
+	grid-area: 5 / 5 / 6 / 6;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Noto Sans", sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 10vh;
+	/* nr tel.555-555-5555 ,Wrocław 51-120 Broniewskiego 12,Polska */
+}
+
+main {
+	background-color: #1c1c1c;
+	color: #c4c4c4;
+}
+
+main nav {
+	display: flex;
+	height: 10vh;
+	width: 80%;
+	margin: auto;
+}
+
+main nav .logo {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2vw;
+	grid-area: 1;
+
+
+}
+
+img {
+  margin-left: -190px;
+}
+
+main nav .nav-links {
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	flex: 0.3;
+	font-size: 3rem;
+	text-transform: uppercase;
+	list-style: none;
+	text-decoration: none;
+	margin-right: 50px;
+}
+
+ul.nav-links {
+	margin-left: 25px;
+}
+
+a {
+	margin-right: 25px;
+}
+
+.noDecoration,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.landing {
+
+	grid-area: 1;
+	background-color: rgba(0, 0, 0, 0.6);
+	background-blend-mode: multiply;
+	position: relative;
+	height: 84vh;
+	padding-left: 10vh;
+	background-image: url("../assets/background.jpg");
+	background-size: cover;
+	text-transform: uppercase;
+	display: grid;
+	-ms-grid-columns: 10% 2fr 1fr 10%;
+	grid-template-columns: 10% 2fr 1fr 10%;
+	-ms-grid-rows: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+}
+
+
+.landing .header1 {
+	font-size: 2.5rem;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;
+	grid-column: 2/3;
+	padding: 5vh;
+
+}
+
+input {
+	height: 30px;
+	font-size: 25px;
+}
+
+#submit {
+	margin-top: 5px;
+  margin-left: 45%;
+}
+
+.landing .header2 {
+	margin-top: 20px;
+	font-size: 16px;
+	background-color: gray;
+	color: black;
+	border: 10px solid #ccc;
+	border-radius: 15px;
+
+
+}
+
+footer {
+	background-color: #1c1c1c;
+	color: #c4c4c4;
+	padding: 0 5% 0 5%;
+	height: 6vh;
+	font-size: 1rem;
+	display: flex;
+
+}
+
+footer .logo {
+	-webkit-box-flex: 2;
+	-ms-flex: 2;
+	flex: 2;
+}
+
+footer .social {
+	font-size: 2em;
+}
